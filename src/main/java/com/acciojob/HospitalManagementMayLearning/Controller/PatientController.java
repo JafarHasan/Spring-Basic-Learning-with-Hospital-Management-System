@@ -95,6 +95,7 @@ public class PatientController {
         return patientService.updatePatientName(patientId,name);
     }
 
+    //delete mapping with @RequestParam
     @DeleteMapping("delete-by-id")
     public ResponseEntity deleteByid(@RequestParam("id")Integer id){
         String response=patientService.deleteById(id);
